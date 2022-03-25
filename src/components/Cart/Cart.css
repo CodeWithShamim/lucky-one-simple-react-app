@@ -1,0 +1,31 @@
+.cart-container {
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+.choose-btn-1,
+.choose-btn-2 {
+    border-radius: 10px;
+    margin-top: 5px;
+    color: white;
+}
+
+.choose-btn-1 {
+    background-color: rgb(96, 125, 255);
+}
+
+.choose-btn-2 {
+    background-color: rgb(255, 144, 231);
+}
+
+.choose-btn-1:hover {
+    background-color: orange;
+}
+
+.choose-btn-2:hover {
+    background-color: orange;
+}
