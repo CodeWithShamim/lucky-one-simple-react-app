@@ -8,7 +8,7 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 const Foods=({food}) => {
     const {img, name, price} = food;
     return (
-        <div className='food-cart col-md-4'>
+        <div className='food-cart col-md-4 '>
             <img src={img} alt="food-images" className='img-fluid' />
             <h4 className='p-2'>{name}</h4>
             <h5>{price}</h5>

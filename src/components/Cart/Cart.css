@@ -29,3 +29,10 @@
 .choose-btn-2:hover {
     background-color: orange;
 }
+
+@media screen and (max-width: 576px) {
+    .cart-container {
+        margin-top: 40px !important;
+        background-color: rgb(16, 255, 255);
+    }
+}
