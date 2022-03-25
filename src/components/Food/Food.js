@@ -1,5 +1,9 @@
 import React from 'react';
 import './Food.css'
+// font awesome 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 
 const Foods=({food}) => {
     const {img, name, price} = food;
