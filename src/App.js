@@ -1,5 +1,7 @@
 import './App.css';
 import Shop from './components/Shop/Shop';
+// bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

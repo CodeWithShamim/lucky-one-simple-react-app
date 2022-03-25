@@ -1,9 +1,10 @@
 import React from 'react';
+import './Food.css'
 
 const Foods=({food}) => {
     const {img, name, price} = food;
     return (
-        <div>
+        <div className='food-cart'>
             <img src={img} alt="food-images" />
             <h3>{name}</h3>
             <h5>{price}</h5>
