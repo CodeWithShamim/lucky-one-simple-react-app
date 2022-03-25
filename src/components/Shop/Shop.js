@@ -13,10 +13,10 @@ const Shop = () => {
     // console.log(foods);
     return (
         <div className="shop-container">
-            <h2>Food House</h2>
-            <div className="row">
+            <h1 className='p-4 text-warning fw-bold fs-1'>Food House</h1>
+            <div className="row mt-5">
                 <div className="food-container col-md-8">
-                    <div className="row  g-4 ">
+                    <div className="row  g-5 ">
                          {foods.map(food=><Foods key={food.id} food={food}></Foods>)}
                     </div>
                 </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Food.css'
 // font awesome 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 
 const Foods=({food}) => {
@@ -12,6 +12,9 @@ const Foods=({food}) => {
             <img src={img} alt="food-images" className='img-fluid' />
             <h3>{name}</h3>
             <h5>{price}</h5>
+            <button className='btn-cart p-2'>
+                <p>Add To Cart <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon></p>
+            </button>
         </div>
     );
 };
