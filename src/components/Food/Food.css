@@ -1,3 +1,10 @@
 .food-cart {
     border: 2px solid black;
+    box-sizing: border-box;
+    padding: 20px;
+    /* margin: 20px; */
+}
+
+.food-cart img {
+    border-radius: 10px;
 }
