@@ -9,8 +9,8 @@ const CartItem = ({cartItem}) => {
     return (
         <div className='dynamic-cartitem'>
             <img src={img} alt="" className='img-fluid' />
-            <p>{name}</p>
-            <span className=''><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></span>
+            <h5>{name}</h5>
+            <span className='delete-btn'><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></span>
         </div>
     );
 };

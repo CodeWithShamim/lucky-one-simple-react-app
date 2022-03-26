@@ -16,6 +16,17 @@ const Shop = () => {
         const newCart = [...cart, food];
         setCart(newCart);
     }
+// remove item form cart 
+    const removeItem = () =>{
+        setCart([])
+    }
+
+    // choose 1 item form cart 
+    const chooseOne = () =>{
+        const randomItem = cart[Math.floor(Math.random()*cart.length)];
+        console.log(randomItem);
+        setCart([randomItem])
+    }
 
     // console.log(foods);
     return (
@@ -28,7 +39,7 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className="cart-container col-md-4">
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart} removeItem={removeItem} chooseOne={chooseOne}></Cart>
                 </div>
             </div>
         </div>

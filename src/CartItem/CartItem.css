@@ -12,12 +12,10 @@
     border-radius: 60px;
 }
 
-.dynamic-cartitem p {
+.dynamic-cartitem h5 {
     margin-left: 15px;
-    font-size: 24px;
 }
 
 .dynamic-cartitem span {
     margin-left: 15px;
-    font-size: 17px;
 }
