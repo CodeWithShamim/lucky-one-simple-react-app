@@ -16,7 +16,7 @@ const Shop = () => {
         const newCart = [...cart, food];
         setCart(newCart);
     }
-// remove item form cart 
+// remove all item form cart 
     const removeItem = () =>{
         setCart([])
     }
@@ -30,6 +30,14 @@ const Shop = () => {
         }
     }
 
+    // delete item selected item from cart 
+    const deleteItem = (id) =>{
+        const restItem = cart.find(cartItem=> cartItem.id !== id);
+        setCart(restItem);
+        console.log(id);
+        
+    };
+
     // console.log(foods);
     return (
         <div className="shop-container">
@@ -41,7 +49,7 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className="cart-container col-md-4">
-                    <Cart cart={cart} removeItem={removeItem} chooseOne={chooseOne}></Cart>
+                    <Cart cart={cart} removeItem={removeItem} chooseOne={chooseOne} deleteItem={deleteItem}></Cart>
                 </div>
             </div>
         </div>
