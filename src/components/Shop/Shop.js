@@ -24,8 +24,10 @@ const Shop = () => {
     // choose 1 item form cart 
     const chooseOne = () =>{
         const randomItem = cart[Math.floor(Math.random()*cart.length)];
-        console.log(randomItem);
-        setCart([randomItem])
+        // console.log(randomItem);
+        if(randomItem){
+            setCart([randomItem])
+        }
     }
 
     // console.log(foods);
