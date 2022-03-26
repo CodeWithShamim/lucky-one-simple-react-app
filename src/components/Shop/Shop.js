@@ -32,10 +32,10 @@ const Shop = () => {
 
     // delete item selected item from cart 
     const deleteItem = (id) =>{
-        const restItem = cart.find(cartItem=> cartItem.id !== id);
+        const restItem = cart.filter(cartItem=> cartItem.id !== id);
         setCart(restItem);
-        console.log(id);
-        
+        // console.log(id);
+
     };
 
     // console.log(foods);
