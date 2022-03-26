@@ -13,8 +13,13 @@ const Shop = () => {
 
     const [cart, setCart] = useState([]);
     const addToCart = (food)=>{
-        const newCart = [...cart, food];
-        setCart(newCart);
+        const findId = cart.find(cartId=> cartId.id ===food.id);
+        // console.log(findId);
+        if(!findId){
+            const newCart = [...cart, food];
+            setCart(newCart);
+        }
+        
     }
 // remove all item form cart 
     const removeItem = () =>{
