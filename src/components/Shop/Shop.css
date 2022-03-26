@@ -7,12 +7,3 @@
 
 
 /* .food-container {} */
-
-@media screen and (max-width: 576px) {
-    .cart-container {
-        order: 1;
-    }
-    .food-container {
-        order: 2;
-    }
-}
