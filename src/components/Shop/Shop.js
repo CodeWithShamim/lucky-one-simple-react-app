@@ -15,10 +15,14 @@ const Shop = () => {
     const addToCart = (food)=>{
         const findId = cart.find(cartId=> cartId.id ===food.id);
         // console.log(findId);
-        if(!findId){
+        if(cart.length ===4){
+            alert('sorry, allow only 4 item');
+        }
+        else if(!findId){
             const newCart = [...cart, food];
             setCart(newCart);
-        }
+        };
+        
         
     }
 // remove all item form cart 
