@@ -53,7 +53,7 @@ const Shop = () => {
             <h1 className='p-4 text-warning fw-bold fs-1'>Food House</h1>
             <div className="row mt-5">
                 <div className="food-container col-md-8 order-2 order-md-1">
-                    <div className="row g-5 pe-0 pe-md-5">
+                    <div className="row">
                          {foods.map(food=><Foods key={food.id} food={food} addToCart={addToCart}></Foods>)}
                     </div>
                 </div>

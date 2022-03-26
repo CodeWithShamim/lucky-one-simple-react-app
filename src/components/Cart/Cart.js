@@ -6,7 +6,7 @@ const Cart = ({cart,removeItem,chooseOne,deleteItem}) => {
     // console.log(cart);
     return (
         <div className='cart-container'>
-           <div className=''>
+           <div>
                 <h3 className='text-primary fw-bold'>Seleted Foods</h3>
                 <div className="dynamic-section">
                     {cart.map((cartItem, index) =><CartItem cartItem={cartItem} key={index} deleteItem={deleteItem}></CartItem>)}
