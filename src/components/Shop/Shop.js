@@ -11,6 +11,12 @@ const Shop = () => {
         .then(data=>setFoods(data));
     },[]);
 
+    const [cart, setCart] = useState([]);
+    const addToCart = (food)=>{
+        const newCart = [...cart, food];
+        setCart(newCart);
+    }
+
     // console.log(foods);
     return (
         <div className="shop-container">
@@ -18,11 +24,11 @@ const Shop = () => {
             <div className="row mt-5">
                 <div className="food-container col-md-8">
                     <div className="row g-5">
-                         {foods.map(food=><Foods key={food.id} food={food}></Foods>)}
+                         {foods.map(food=><Foods key={food.id} food={food} addToCart={addToCart}></Foods>)}
                     </div>
                 </div>
                 <div className="cart-container col-md-4">
-                    <Cart></Cart>
+                    <Cart cart={cart}></Cart>
                 </div>
             </div>
         </div>
