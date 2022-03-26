@@ -6,11 +6,12 @@ const Quiz=() => {
         <div className='quiz-container container d-md-flex pb-4'>
             <div className='me-md-3'>
                 <h2>How React Work?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur veritatis cum sapiente ratione provident, alias, officia placeat ipsum temporibus ad perspiciatis eaque aliquam, quasi sint reprehenderit atque molestias optio inventore maxime ipsa dolorum! Modi facere magnam natus iure ipsum!</p>
+                <p> React implements a virtual DOM. when it needs to read or write to the DOM, it will use the virtual representation it. Then the virtual DOM will try to find the most efficient way to update the browser DOM.
+                React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements.</p>
             </div>
             <div>
                 <h2>Props vs State?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur veritatis cum sapiente ratione provident, alias, officia placeat ipsum temporibus ad perspiciatis eaque aliquam, quasi sint reprehenderit atque molestias optio inventore maxime ipsa dolorum! Modi facere magnam natus iure ipsum!</p>
+                <p>The difference in Props vs State is Props read-only, Props can't be Modified. It is Immutable. On the other hand, State is asynchronous. It is both read and write. It is Mutable. State can be modified using this.useState().</p>
             </div>
         </div>
     );
