@@ -16,7 +16,7 @@ const Shop = () => {
         const findId = cart.find(cartId=> cartId.id ===food.id);
         // console.log(findId);
         if(cart.length ===4){
-            alert('sorry, allow only 4 item');
+            alert("Opps..., can't add item more than 4 !");
         }
         else if(!findId){
             const newCart = [...cart, food];
@@ -52,12 +52,12 @@ const Shop = () => {
         <div className="shop-container">
             <h1 className='p-4 text-warning fw-bold fs-1'>Food House</h1>
             <div className="row mt-5">
-                <div className="food-container col-md-8">
-                    <div className="row g-5">
+                <div className="food-container col-md-8 order-2 order-md-1">
+                    <div className="row g-5 pe-0 pe-md-5">
                          {foods.map(food=><Foods key={food.id} food={food} addToCart={addToCart}></Foods>)}
                     </div>
                 </div>
-                <div className="cart-container col-md-4">
+                <div className="cart-container col-md-4 order-1 order-md-2">
                     <Cart cart={cart} removeItem={removeItem} chooseOne={chooseOne} deleteItem={deleteItem}></Cart>
                 </div>
             </div>
